@@ -3,7 +3,7 @@ title: "How to start your own blog for free"
 description: "How to create a blog with Astro blog templates and Github Pages"
 tags: ["Personal blog", "Reasearch Homepage", "Project presentation", "note"]
 pubDate: 2026-05-09
-heroImage: '../../assets/start-your-own-blog.jpg'
+heroImage: '../../assets/start-your-own-blog.png'
 ---
 
 导师推荐我们建立自己的博客，用来记录学习笔记、科研想法、代码问题和生活记录。最开始我以为搭博客一定要买服务器、买域名、配置一堆复杂东西。后来发现，其实可以先用一个完全免费的方案开始：
