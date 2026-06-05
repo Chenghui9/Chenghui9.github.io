@@ -1,12 +1,12 @@
 ---
-title: "How to start your own blog for free"
-description: "How to create a blog with Astro blog templates and Github Pages"
-tags: ["Personal blog", "Reasearch Homepage", "Project presentation", "note"]
-pubDate: 2026-05-09
-heroImage: '../../assets/start-your-own-blog.png'
+title: 'How to start your own blog for free'
+description: 'How to create a blog with Astro blog templates and Github Pages'
+pubDate: 'May 09 2026'
+heroImage: '../../assets/blog.jpg'
+category: 'method'
 ---
 
-导师推荐我们建立自己的博客，用来记录学习笔记、科研想法、代码问题和生活记录。最开始我以为搭博客一定要买服务器、买域名、配置一堆复杂东西。后来发现，其实可以先用一个完全免费的方案开始：
+建立自己的博客，记录学习笔记、科研想法、代码问题和生活记录。最开始我以为搭博客一定要买服务器、买域名、配置一堆复杂东西。后来发现，其实可以先用一个完全免费的方案开始：
 
 ```
 Astro + GitHub Pages
@@ -43,27 +43,21 @@ https://yourname.github.io
 整个过程可以理解成这样：
 
 ```
-在电脑上创建 Astro 博客
-↓
-把博客文件上传到 GitHub
-↓
-GitHub Actions 自动构建网站
-↓
-GitHub Pages 把网站发布到互联网上
+1. 在电脑上创建 Astro 博客
+2. 把博客文件上传到 GitHub
+3. GitHub Actions 自动构建网站
+4. GitHub Pages 把网站发布到互联网上
 ```
 
 几个名字可以先这样理解：
 
-| 名词           | 可以怎么理解                   |
-| -------------- | ------------------------------ |
-| Astro          | 把 Markdown 文章变成网页的工具 |
-| GitHub         | 存放博客代码和文章的地方       |
-| GitHub Actions | 自动帮你构建和部署网站         |
-| GitHub Pages   | 免费把网站发布到网上的服务     |
+Astro: 把 Markdown 文章变成网页的工具
+GitHub: 存放博客代码和文章的地方
+GitHub Actions: 自动帮你构建和部署网站
+GitHub Pages: 免费把网站发布到网上的服务
 
-GitHub Pages 本质上是一个静态网站托管服务，可以从 GitHub 仓库发布网站文件；Astro 官方也支持用 GitHub Actions 把 Astro 网站部署到 GitHub Pages。
-
-建议配图：这里可以放一张简单流程图，画出“本地电脑 → GitHub → GitHub Actions → GitHub Pages → 访问网站”。
+GitHub Pages 本质上是一个静态网站托管服务，可以从 GitHub 仓库发布网站文件；
+Astro 官方也支持用 GitHub Actions 把 Astro 网站部署到 GitHub Pages。
 
 ## 3. 准备工具
 
@@ -115,8 +109,6 @@ npm.cmd -v
 
 成功标志：`node -v` 和 `npm.cmd -v` 都能显示版本号。
 
-建议配图：Node.js 和 npm 版本检查成功的终端截图。
-
 ## 4. 创建 Astro 博客项目
 
 先选择一个你想放博客的文件夹。例如我把它放在 D 盘：
@@ -160,8 +152,6 @@ npm.cmd install
 
 成功标志：项目文件夹中能看到 `package.json`、`astro.config.mjs`、`src` 等文件。
 
-建议配图：项目文件夹截图，标出 `package.json` 和 `astro.config.mjs`。
-
 ## 5. 本地预览博客
 
 进入项目目录：
@@ -193,8 +183,6 @@ http://localhost:4321/
 注意，这个地址只是你电脑上的本地预览。别人还不能通过这个地址访问你的网站。
 
 成功标志：浏览器能打开 `http://localhost:4321/`，并看到 Astro Blog 页面。
-
-建议配图：Astro Blog 本地预览截图。
 
 ## 6. 修改 Astro 配置
 
@@ -263,8 +251,6 @@ Public
 这里建议先不要勾选 README，因为我们本地已经有 Astro 项目文件了。
 
 成功标志：GitHub 上出现一个新的空仓库，名字是 `yourname.github.io`。
-
-建议配图：GitHub 新建仓库页面截图。
 
 ## 8. 把本地博客上传到 GitHub
 
@@ -468,8 +454,6 @@ deploy ✅
 Status: Success
 ```
 
-建议配图：GitHub Actions 成功页面截图，标出绿色勾。
-
 ## 11. 打开你的免费网站
 
 部署成功后，打开：
@@ -514,12 +498,10 @@ pubDate: 'May 10 2026'
 
 这部分叫 frontmatter，可以理解为“文章信息卡”：
 
-| 字段        | 含义                     |
-| ----------- | ------------------------ |
-| title       | 文章标题                 |
-| description | 文章简介                 |
-| pubDate     | 发布时间                 |
-| heroImage   | 封面图，可选，取决于模板 |
+title: 文章标题
+description: 文章简介
+pubDate: 发布时间
+heroImage: 封面图，可选，取决于模板
 
 第二个 `---` 后面才是正文：
 
@@ -626,21 +608,14 @@ GitHub Actions
 用 Astro + GitHub Pages 搭建免费博客，大致流程是：
 
 ```
-安装 Node.js 和 Git
-↓
-创建 Astro blog 项目
-↓
-本地预览
-↓
-创建 GitHub 仓库
-↓
-上传代码
-↓
-添加 GitHub Actions 部署文件
-↓
-打开 GitHub Pages
-↓
-开始写 Markdown 博客
+1. 安装 Node.js 和 Git
+2. 创建 Astro blog 项目
+3. 本地预览
+4. 创建 GitHub 仓库
+5. 上传代码
+6. 添加 GitHub Actions 部署文件
+7. 打开 GitHub Pages
+8. 开始写 Markdown 博客
 ```
 
 这个方案的最大优点是：

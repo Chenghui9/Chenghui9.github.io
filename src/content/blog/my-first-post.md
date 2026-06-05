@@ -1,7 +1,7 @@
 ---
 title: "My First Blog Post"
 description: "This is my first Astro blog post."
-pubDate: 2026-05-09
+pubDate: 2026-05-08
 tags: ["blog", "Astro"]
 ---
 
